@@ -151,6 +151,7 @@ input[type=text] {
   }
 
 .burger{
+    color: #000;
     display: none;
 }
 @media screen and (max-width: 750px) {
