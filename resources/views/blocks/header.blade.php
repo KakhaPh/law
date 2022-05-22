@@ -16,7 +16,7 @@
     </div>
 
     <div class="image_cont">
-        <a href="{{ route('home')}}" class="header-image"><img class="header-image" src="{{ asset('storage/Images/logo-geo.png')}}"></a>
+        <a href="{{ route('home')}}" class="header-image"><img class="header-image" src="https://law.org.ge/wp-content/uploads/2021/08/logo-geo.png"></a>
     </div>
 
     <div class="nav_cont">
