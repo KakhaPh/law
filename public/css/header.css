@@ -4,26 +4,32 @@ body {
 }
 
 .header {
-	height: 140px;
 	box-sizing: border-box;
-	box-shadow:0 1px 1px #ccc;
+    color: white;
+}
+.header__top{
+    background-color: #84c4ff;
+    padding: 15px;
+    display: flex;
+
 }
 
 .image_cont {
-    width: 25%;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
-    margin-left: 15%;
+    align-items: center;
+    margin-left: 5%;
+    width: 90%;
 }
 
 .header-image {
-    width: 65%;
+    width: 200px;
 }
 
 .nav_cont {
-    width: 100%;
-    padding: 0;
+    padding: 10px;
     background-color: rgb(156, 156, 156);
-    height: 40px;
 }
 
 .nav_ul {
@@ -31,16 +37,21 @@ body {
     list-style: none;
     width: 75%;
     margin: 0px auto;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.nav_li, .nav_li_a {
+.nav_li_a {
     color: #fff;
+    margin-left: 15px;
     font-weight: bold;
-    padding: 9.5px;
     text-decoration: none;
 }
+.nav_li{
+    font-size: 15px;
+    margin-left: 15px;
 
+}
 .nav_li:hover{
     background-color: lightgray;
     
@@ -48,9 +59,8 @@ body {
 
 .search_cont {
     float: right;
-    width: 27%;
     height: 100%;
-    margin-right: 10%;
+    margin-right: 5%;
     box-sizing: border-box;
 }
 
@@ -98,3 +108,66 @@ input[type=text] {
 .links_a:hover {
     color: rgb(177, 175, 175);
 }
+
+.sidenav {
+    height: 100%; 
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+.burger{
+    display: none;
+}
+@media screen and (max-width: 750px) {
+   .nav_cont{
+       display: none;
+   }
+   .search_cont{
+         display: none;
+   }
+   .burger{
+    display: block;
+   }
+   .header-image{
+       width: 150px;
+   }
+}
+/* @media screen and (max-width: 600px) {
+
+  }
+   */

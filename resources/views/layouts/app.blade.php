@@ -19,10 +19,15 @@
     <body>
         <div class="container">
                 @include('blocks.header')
-            @yield('content')
+
+                <main>
+                    @yield('content')
+
+                </main>
 
             
         </div>
         @include('blocks.footer')
     </body>
+    <script src="{{ asset("js/topnav.js") }}"></script>
 </html>

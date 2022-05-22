@@ -4,23 +4,23 @@
         <div class="footer__head__content">
 
         <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
 
         <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
 
         <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
 
         <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
 
         <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
         <div class="footer__main__content">
 
         <div class="footer__main-img">
-            <img width="150px" src="{{ asset('storage/images/bg.jpg') }}" alt="">
+            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
         </div>
         <div class="line"></div>
         <div class="footer__main-menu">
