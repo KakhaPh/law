@@ -6,22 +6,26 @@
         
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a href="">მთავარი</a>
+                <a href="">ჩვეენს შესახებ</a>
+                <a href="">სიახლეები</a>
+                <a href="">გამოცემები</a>
+                <a href="">ვიდეო ლექციები</a>
+                <a href="">კონტაქტი</a>
+                <a href="">ფორუმი</a>
             </div>
             <span class="burger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>          
         </div>
 
         <div class="search_cont">
             <div class="links">
-                <a class="links_a" href="#"><i class="far fa-envelope">info@law.org.ge</i></a>
-                <a class="links_a" href="#"><i class="fas fa-phone">+99532200171 (116)</i></a>
+                <a class="links_a" href="#"><i class="far fa-envelope">info@law.org.ge </i> |</a>
+                <a class="links_a" href="#"><i class="fas fa-phone">+99532200171 (116) </i> |</a>
                 <a class="links_a" href="#"><i class="fab fa-facebook"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-pinterest"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-twitter-square"></i></a>
+                <a class="links_a" href="#"><i class="fab fa-flickr"></i></a>
             </div>
             <form action="#" method="post">
                 <input type="text" name="search" placeholder="ძებნა">

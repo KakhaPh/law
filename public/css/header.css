@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     height: 100%;
     align-items: center;
-    margin-left: 20%;
+    margin-left: 15%;
     width: 90%;
 }
 
@@ -59,8 +59,9 @@ body {
 
 .search_cont {
     float: right;
+    width: 60%;
     height: 100%;
-    margin-right: 5%;
+    margin-right: 10%;
     box-sizing: border-box;
 }
 
@@ -73,18 +74,18 @@ input[type=text] {
     font-size: 13px;
     outline: none;
     float:left;
-    width: 50%;
+    width: 40%;
     margin-top:40px;
-    margin-left: 80px
+    margin-left:180px
 }
 
 .search-button {
-    padding: 6.1px;
+    padding: 6.2px;
     border: solid 1px black;
     border-left: none;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    width: 6%;
+    width: 10%;
     float: left;
     margin-top: 40px;
 }
