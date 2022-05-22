@@ -1,53 +1,42 @@
 <div class="footer">
     
     <div class="footer__head">
-        <div class="footer__head__content">
-
-        <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
-
-        <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
-
-        <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
-
-        <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
-
-        <div class="footer__head__box">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
+        <div class="inheader">
+            <div class="footer_box">
+                <h3 class="footer_title">ჩვენს შესახებ</h3>
+                <p class="footer_text">ინსტიტუტის მისიაა სამართლის მეცნიერების განვითარების ხელშეწყობა, როგორც ადგილობრივ, ისე საერთაშორისო დონეზე.</p>
+                <div class="icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-google-plus-square"></i>
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-flickr"></i>
+                </div>
+            </div>
+            <div class="footer_box">
+                <h3 class="footer_title">ბოლო სიახლეები</h3>
+                <i class="fas fa-angle-right last_news"> </i><a class="last_news left"> სამართალი და მსოფლიო ბუდაპეშტის ღია ხელმისაწვდომობის ინიციატივის (BOAI) საერთაშორისო დეკლარაციის ხელმომწერი მხარე გახდა</a><br>
+                <i class="fas fa-angle-right last_news"> </i><a class="last_news left"> კარძო სექტორი და შრომითი რეგულაციები</a><br>
+                <i class="fas fa-angle-right last_news"> </i><a class="last_news left"> ფრანგულ-ქართული სამეცნიერო კონფერენცია: „მართლმსაჯულების აქტუალური პრობლერმები 2021 (არასრულწლოვანთა მართლმსაჯულება)</a><br>
+                <i class="fas fa-angle-right last_news"> </i><a class="last_news left"> მოსამართლეთა პროფესიული ფორმირება</a><br>
+                <i class="fas fa-angle-right last_news"> </i><a class="last_news left"> კონცენტრაციების კონტროლი საქართველოში</a>
+            </div>
+            <div class="footer_box">
+                <h3 class="footer_title">კონტაქტი</h3>
+                <p class="footer_text">მისამართი: გურამიშვილის გამზირი 76, თბილისი 0141</p>
+                <p class="contact"><i class="fas fa-phone-volume"></i> +995 32 200171 (116)</p>
+                <p class="contact"><i class="fas fa-mobile"></i> +995 577 42 16 16 </p>
+                <p class="contact"><i class="far fa-envelope"></i> info@law.org.ge</p>
+            </div>
         </div>
     </div>
 
     <div class="footer__main">
-        <div class="footer__main__content">
-
-        <div class="footer__main-img">
-            <img width="150px" src="{{ asset('storage/Images/bg.jpg') }}" alt="">
-        </div>
-        <div class="line"></div>
-        <div class="footer__main-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
+        <div class="copyright"> © Copyright 2022 All Right Revered | Law Institute |  +99532200171 (116) | info@law.org.ge | SEND EMAIL</div>
     </div>
-</div>
-<div class="footer__bottom">
-    <h4>
-        © 2022 INDEPENDENT INSTITUTE, 100 SWAN WAY, OAKLAND CA 94621‑1428 | (510) 632‑1366 | (510) 568‑6040 FAX | SEND EMAIL
-        </h4>
-</div>
+
+    <div class="footer__bottom">
+
+    </div>
 </div>
