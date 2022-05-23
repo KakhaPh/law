@@ -37,9 +37,8 @@ body {
 
 .nav_ul {
     width: 75%;
-    margin: 0px auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    justify-content: space-between;
     display: flex;
     list-style: none;
 }
@@ -153,7 +152,15 @@ form{
     color: #000;
     display: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1024px) {
+    .nav_ul {
+        width: 90%;
+        margin: 0 0;
+    }
+}
+  
+
+@media screen and (max-width: 768px) {
    .nav_cont{
        display: none;
    }
@@ -170,7 +177,3 @@ form{
          margin-left: 0;
    }
 }
-/* @media screen and (max-width: 600px) {
-
-  }
-   */
