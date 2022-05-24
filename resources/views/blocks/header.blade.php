@@ -19,15 +19,15 @@
 
         <div class="search_cont">
             <div class="links">
-                <a class="links_a" href="#"><i class="far fa-envelope">info@law.org.ge </i> &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
-                <a class="links_a" href="#"><i class="fas fa-phone">+99532200171 (116) </i> </a>  <strong style="color: gray">|</strong>&nbsp;
+                <a class="links_a" href="#"> <i class="far fa-envelope"> info@law.org.ge </i> &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
+                <a class="links_a" href="#"> <i class="fas fa-phone"> +99532200171 (116) </i> </a>  <strong style="color: gray">|</strong>&nbsp;
                 <a class="links_a" href="#"><i class="fab fa-facebook"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-pinterest"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-twitter-square"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-flickr"></i></a>
             </div>
-            <form  method="post">
+            <form  method="post" class="search_form">
                 <input type="text" class="header__inp" name="search" placeholder="ძებნა">
                 <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
             </form>
