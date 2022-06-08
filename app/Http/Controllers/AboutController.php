@@ -9,7 +9,7 @@ class AboutController extends Controller
 {
     public function index()
     {
-        $authors =  DB::table('authors')->orderBy('authors_id', 'asc')->get();
+        $authors = Authors::all();
         // dd($authors);
         return view('pages.about', ['authors' => $authors]);
 
