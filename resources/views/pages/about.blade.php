@@ -1,15 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="about_banner_div">
-        <img src="{{ asset('storage/Images/page-title-background.jpg') }}" class="about_title">
+    <div style="background-image: url('{{ asset('storage/Images/page-title-background.jpg') }}')" class="about_banner_div">
         <h1 class="about_banner_title">ჩვენს შესახებ</h1>
         <h3 class="about_banner_title_under">ევროპის უნივერსიტეტის სამართლის ინსტიტუტი წესდება</h3>
     </div>
-    <div class="about__slider__btns">
-            <button  id="btnNext">Next</button>
-            <button  id="btnPrev">Prev</button>
-        </div>
+
         <div class="about__main__slider">
             <div id="slider" class="about__slider">
                 @foreach($authors as $author)
@@ -26,3 +22,11 @@
         </div>
     
 @endsection
+
+@push('scripts')
+<script src="{{ asset("js/slider.js") }}"></script>
+@endpush
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/about.css') }}">
+@endpush

@@ -6,13 +6,9 @@
         
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="">მთავარი</a>
-                <a href="">ჩვეენს შესახებ</a>
-                <a href="">სიახლეები</a>
-                <a href="">გამოცემები</a>
-                <a href="">ვიდეო ლექციები</a>
-                <a href="">კონტაქტი</a>
-                <a href="">ფორუმი</a>
+                @foreach($menus as $menu)
+               <a class="nav_li_a" href="{{ $menu->address }}">{{ $menu->name }}</a>
+                @endforeach
             </div>
             <span class="burger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>          
         </div>
@@ -37,13 +33,9 @@
 
     <div class="nav_cont">
         <ul class="nav_ul">
-            <li class="nav_li"><a class="nav_li_a" href="{{ route('home')}}">მთავარი</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="{{ route('about')}}">ჩვეენს შესახებ</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="#">სიახლეები</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="#">გამოცემები</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="#">ვიდეო ლექციები</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="#">კონტაქტი</a></li>
-            <li class="nav_li"><a class="nav_li_a" href="#">ფორუმი</a></li>
+            @foreach($menus as $menu)
+            <li class="nav_li"><a class="nav_li_a" href="{{ $menu->address }}">{{ $menu->name }}</a></li>
+            @endforeach
             
         </ul>
         

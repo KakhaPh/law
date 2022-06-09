@@ -3,7 +3,7 @@
 $(document).ready(function(){
     $('.home__main__slider').owlCarousel({
         loop:true,
-        margin:10,
+        margin:15,
         autoWidth:true,
         responsiveClass:true,
         responsive:{
@@ -26,7 +26,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.main__bottom__slider').owlCarousel({
         loop:true,
-        margin:10,
+        margin:15,
         responsiveClass:true,
         responsive:{
             0:{

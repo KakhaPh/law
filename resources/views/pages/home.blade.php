@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
     <div class="home_content">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -353,3 +354,10 @@
     </div>
     
 @endsection
+@push('scripts')
+<script src="{{ asset("js/home_slider.js") }}"></script>
+@endpush
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endpush
