@@ -15,8 +15,26 @@
 
         <div class="search_cont">
             <div class="links">
-                <a class="links_a" href="#"> <i class="far fa-envelope"> info@law.org.ge </i> &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
-                <a class="links_a" href="#"> <i class="fas fa-phone"> +99532200171 (116) </i> </a>  <strong style="color: gray">|</strong>&nbsp;
+                <div class="link__item">
+                    <div class="link__item__icon">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="link__item__text">
+                        <p>info@law.org.ge</p>
+                     </div>
+                </div>
+                <strong style="color: gray">|</strong>
+                <div class="link__item">
+                    <div class="link__item__icon">
+                        <i class="fas fa-phone"> </i>
+                    </div>
+                    <div class="link__item__text">
+                        <p>+99532200171 (116)</p>
+                     </div>
+                </div>
+                <strong style="color: gray">|</strong>
+                {{-- <a class="links_a" href="#"> <i class="far fa-envelope">  </i>info@law.org.ge &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
+                <a class="links_a" href="#"> <i class="fas fa-phone"> </i> +99532200171 (116) </a>  <strong style="color: gray">|</strong>&nbsp; --}}
                 <a class="links_a" href="#"><i class="fab fa-facebook"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-pinterest"></i></a>
