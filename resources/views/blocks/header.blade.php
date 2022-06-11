@@ -41,10 +41,17 @@
                 <a class="links_a" href="#"><i class="fab fa-twitter-square"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-flickr"></i></a>
             </div>
+            <div class="header__form__slogan">
+
+            <div class="header__slogan">
+                {{-- Turn Idea Into a Reality! --}}
+                <h4>აქციე იდეები საქმედ!</h4>
+            </div>
             <form  method="post" class="search_form">
                 <input type="text" class="header__inp" name="search" placeholder="ძებნა">
                 <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
             </form>
+            </div>
         </div>
 
     </div>

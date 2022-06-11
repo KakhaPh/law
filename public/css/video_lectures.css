@@ -1,0 +1,17 @@
+.lectures_banner_div {
+    padding: 75px 0px;
+    position: relative;
+    z-index: 89;
+    text-align: center;
+    line-height: 1;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.lectures_banner_title {
+    color: #fff;
+    font-style: italic;
+}
+.lectures__container{
+    height: 50vh;
+}
