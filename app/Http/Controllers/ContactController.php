@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
     public function menu_info(){
-        $menu_info = Menus::where('address', '/about')->first();
+        $menu_info = Menus::where('address', '/contact')->first();
         return $menu_info;
     }
     public function menu(){

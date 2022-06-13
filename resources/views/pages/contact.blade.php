@@ -4,8 +4,8 @@
 
 <div class="contact__container">
     <div style="background-image: url('{{ asset('storage/Images/page-title-background.jpg') }}')" class="contact_banner_div">
-        <h1 class="contact_banner_title">კონტაქტი</h1>
-        <h3 class="contact_banner_title_under">Aenean eu leo quam. Pellentesque ornare sem.</h3>
+        <h1 class="contact_banner_title">{{$menu_info->name}}</h1>
+        <h3 class="contact_banner_title_under">{{$menu_info->body}}</h3>
     </div>
 
     <div class="contact_body__container">

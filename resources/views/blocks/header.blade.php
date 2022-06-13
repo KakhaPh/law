@@ -23,7 +23,7 @@
                         <p>info@law.org.ge</p>
                      </div>
                 </div>
-                <strong style="color: gray">|</strong>
+                <strong>|</strong>
                 <div class="link__item">
                     <div class="link__item__icon">
                         <i class="fas fa-phone"> </i>
@@ -32,7 +32,7 @@
                         <p>+99532200171 (116)</p>
                      </div>
                 </div>
-                <strong style="color: gray">|</strong>
+                <strong>|</strong>
                 {{-- <a class="links_a" href="#"> <i class="far fa-envelope">  </i>info@law.org.ge &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
                 <a class="links_a" href="#"> <i class="fas fa-phone"> </i> +99532200171 (116) </a>  <strong style="color: gray">|</strong>&nbsp; --}}
                 <a class="links_a" href="#"><i class="fab fa-facebook"></i></a>
@@ -67,4 +67,4 @@
     </div>
     {{-- mobile nav --}}
   
-</header><br> 
+</header>

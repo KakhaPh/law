@@ -2,8 +2,8 @@
 
 @section('content')
     <div style="background-image: url('{{ asset('storage/Images/page-title-background.jpg') }}')" class="about_banner_div">
-        <h1 class="about_banner_title">ჩვენს შესახებ</h1>
-        <h3 class="about_banner_title_under">ევროპის უნივერსიტეტის სამართლის ინსტიტუტი წესდება</h3>
+        <h1 class="about_banner_title">{{$menu_info->name}}</h1>
+        <h3 class="about_banner_title_under">{{$menu_info->body}}</h3>
     </div>
 
         <div class="about__main__slider">

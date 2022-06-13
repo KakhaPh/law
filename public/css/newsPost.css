@@ -1,0 +1,17 @@
+.news_post_banner_div {
+    padding: 75px 0px;
+    position: relative;
+    z-index: 89;
+    text-align: center;
+    line-height: 1;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.news_post_banner_title {
+    color: #fff;
+    font-style: italic;
+}
+.news_post_banner_title_under {
+    color: #da5643;
+}

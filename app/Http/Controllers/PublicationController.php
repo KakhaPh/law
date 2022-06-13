@@ -8,7 +8,7 @@ use App\Models\Menus;
 class PublicationController extends Controller
 {
     public function menu_info(){
-        $menu_info = Menus::where('address', '/')->first();
+        $menu_info = Menus::where('address', '/publications')->first();
         return $menu_info;
     }
     public function menu(){

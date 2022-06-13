@@ -2,7 +2,7 @@
 
 @section('content')
     <div style="background-image: url('{{ asset('storage/Images/page-title-background.jpg') }}')" class="lectures_banner_div">
-        <h1 class="lectures_banner_title">ვიდეო ლექციები</h1>
+        <h1 class="lectures_banner_title">{{$menu_info->name}}</h1>
     </div>
     <div class="lectures__container">
         
