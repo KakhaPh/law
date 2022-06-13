@@ -1,11 +1,11 @@
-.footer{
+.footer {
     width: 100%;
     height: fit-content;
 }
 
-.footer__head{
+.footer__head {
     width: 100%;
-    background-color:#161616;
+    background-color: #161616;
     padding-bottom: 15px;
     padding-top: 15px;
 }
@@ -32,16 +32,17 @@
     font-size: 12px;
 }
 
-.last_news{
+.last_news {
     color: rgb(216, 215, 215);
     font-size: 13px;
     margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .left {
     margin-left: 10px;
     color: #515151;
-    
 }
 
 .icons .fab {
@@ -50,7 +51,7 @@
     margin-left: 10px;
 }
 
-.left:hover{
+.left:hover {
     color: #fff;
     transition: .2s;
 }
@@ -61,14 +62,14 @@
     font-size: 13px;
 }
 
-.footer__main{
+.footer__main {
     height: 50px;
     background-color: #262626;
     color: #fff;
     padding: 15px;
 }
 
-.footer__bottom{
+.footer__bottom {
     width: 100%;
     height: 75px;
     background-color: #303030;
@@ -79,24 +80,25 @@
     color: #afafaf;
     font-size: 14px;
 }
+
 @media screen and (max-width: 750px) {
-    .inheader{
+    .inheader {
         flex-direction: column;
         width: 100%;
         justify-content: center;
     }
     .footer_box,
-    .footer__main{
+    .footer__main {
         margin: auto;
         text-align: center;
     }
-    .footer_box{
+    .footer_box {
         width: 420px;
     }
-    .copyright{
+    .copyright {
         margin: 0;
     }
-    .footer_box{
+    .footer_box {
         width: 90%;
     }
 }

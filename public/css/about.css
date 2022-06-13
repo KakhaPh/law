@@ -1,21 +1,25 @@
-.about__main__slider{
+.about__main__slider {
     max-width: 760px;
     margin: 0 auto;
     overflow-x: hidden;
 }
-.about__slider{
+
+.about__slider {
     flex-direction: column-reverse;
     display: flex;
     transition: 0.7s;
 }
-.about__slider__btns{
+
+.about__slider__btns {
     display: flex;
     margin-bottom: 10px;
     justify-content: center;
 }
-.owl-nav{
+
+.owl-nav {
     margin: 12px auto !important;
 }
+
 .about_banner_div {
     padding: 75px 0px;
     position: relative;
@@ -34,7 +38,8 @@
 .about_banner_title_under {
     color: #da5643;
 }
-.about__slider__btns > button{
+
+.about__slider__btns>button {
     width: 80px;
     cursor: pointer;
     height: 35px;
@@ -45,11 +50,13 @@
     margin-left: 10px;
     background-color: #eaeaea;
 }
-.owl-stage{
-    display: flex !important;
 
+.owl-stage {
+    display: flex !important;
 }
-.owl-next,.owl-prev{
+
+.owl-next,
+.owl-prev {
     background-color: #dddddd;
     color: rgb(116, 116, 116);
     border: none;
@@ -59,39 +66,46 @@
     margin: 5px;
     cursor: pointer;
 }
-.owl-dots{
+
+.owl-dots {
     display: none !important;
 }
-.about__slider__btns > button:hover{
+
+.about__slider__btns>button:hover {
     background-color: #ec4933;
-    color:#fff;
+    color: #fff;
 }
-.about__slider__item{
+
+.about__slider__item {
     max-width: 180px;
     margin: 0px 15px 20px;
-
 }
-.about__main__slider-info{
+
+.about__main__slider-info {
     text-align: center;
     font-family: sans-serif;
 }
-.about__main__slider-info > h3{
+
+.about__main__slider-info>h3 {
     color: #454545;
     cursor: pointer;
 }
-.about__main__slider-info > h3:hover{
+
+.about__main__slider-info>h3:hover {
     color: #ed280e;
 }
-.about__main__slider-info > p:nth-child(2){
+
+.about__main__slider-info>p:nth-child(2) {
     font-style: italic;
 }
-.about__main__slider-info > p{
+
+.about__main__slider-info>p {
     color: #818181;
     line-height: 28px;
 }
+
 @media screen and (max-width: 750px) {
-    .about__main__slider{
+    .about__main__slider {
         max-width: 400px;
     }
-  
 }
