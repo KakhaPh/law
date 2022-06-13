@@ -26,15 +26,13 @@
                 <strong>|</strong>
                 <div class="link__item">
                     <div class="link__item__icon">
-                        <i class="fas fa-phone"> </i>
+                        <i class="fas fa-phone"></i>
                     </div>
                     <div class="link__item__text">
                         <p>+99532200171 (116)</p>
                      </div>
                 </div>
-                <strong>|</strong>
-                {{-- <a class="links_a" href="#"> <i class="far fa-envelope">  </i>info@law.org.ge &nbsp; &nbsp; </a> <strong style="color: gray">|</strong> &nbsp;
-                <a class="links_a" href="#"> <i class="fas fa-phone"> </i> +99532200171 (116) </a>  <strong style="color: gray">|</strong>&nbsp; --}}
+                <strong style="color: gray">|</strong>
                 <a class="links_a" href="#"><i class="fab fa-facebook"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="links_a" href="#"><i class="fab fa-pinterest"></i></a>
@@ -42,15 +40,13 @@
                 <a class="links_a" href="#"><i class="fab fa-flickr"></i></a>
             </div>
             <div class="header__form__slogan">
-
-            <div class="header__slogan">
-                {{-- Turn Idea Into a Reality! --}}
-                <h4>აქციე იდეები საქმედ!</h4>
-            </div>
-            <form  method="post" class="search_form">
-                <input type="text" class="header__inp" name="search" placeholder="ძებნა">
-                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-            </form>
+                <div class="header__slogan">
+                    <h4>აქციე იდეები საქმედ!</h4>
+                </div>
+                <form  method="post" class="search_form">
+                    <input type="text" class="header__inp" name="search" placeholder="ძებნა">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
             </div>
         </div>
 

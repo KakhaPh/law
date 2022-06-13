@@ -1,13 +1,23 @@
-body{
+* {
+    font-family: "Open Sans";
+}
+
+body {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+    font-size: 13px;
 }
-.container{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cardo";
+}
+
+.container {
     height: auto;
-
 }
-main{
-    margin-top: 5px;
-}
-
