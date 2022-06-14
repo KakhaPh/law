@@ -14,5 +14,57 @@
 }
 
 .publications__container {
-    height: 50vh;
+    height: fit-content;
+}
+
+.books__container {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    width: auto;
+}
+
+.books__box{
+    width: 25%;
+    margin: 10px;
+}
+
+.books__box>h2{
+    color: #333333;
+    font-size: 19px;
+    font-weight: bold;
+    max-width: 80%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+.books__box>.book__image{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+
+.books__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buy,.view{
+    border: none;
+    padding: 7px;
+    color: #fff;
+    background-color: #ec4933;
+    width: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .books__container{
+        flex-direction: column;
+    }
+    .books__box {
+        width: 100%;
+        margin-left: -5px;
+    }
 }

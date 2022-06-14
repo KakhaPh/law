@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Menus;
 
 use Illuminate\Http\Request;
-use App\Models\Menus;
+use Illuminate\Support\Facades\DB;
+use App\Models\books;
 
 class PublicationController extends Controller
 {
@@ -17,6 +19,9 @@ class PublicationController extends Controller
     }
     public function index()
     {
-        return view('pages.pubLectures',['menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+        $books = books::all();
+        // dd($books);
+        return view('pages.pubLectures', ['books' => $books,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+
     }
 }
