@@ -4,8 +4,9 @@
     z-index: 89;
     text-align: center;
     line-height: 1;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .publications_banner_title {
