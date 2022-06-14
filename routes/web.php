@@ -26,3 +26,4 @@ Route::get('/publications', [PublicationController::class, 'index'])->name('publ
 Route::get('/video_lectures', [VideoLecturesController::class, 'index'])->name('videoLectures');
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.show');
+Route::get('/tags/{id}', [NewsController::class, 'tag'])->name('news.tag');

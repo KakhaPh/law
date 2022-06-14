@@ -43,8 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
     // connect user to news author id
-    public function news()
-    {
-        return $this->hasMany(News::class);
-    }
+    // public function news()
+    // {
+    //     return $this->hasMany(News::class);
+    // }
 }
