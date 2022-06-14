@@ -25,12 +25,12 @@
     width: auto;
 }
 
-.books__box{
+.books__box {
     width: 25%;
     margin: 10px;
 }
 
-.books__box>h2{
+.books__box>h2 {
     color: #333333;
     font-size: 19px;
     font-weight: bold;
@@ -40,7 +40,7 @@
     margin: auto;
 }
 
-.books__box>.book__image{
+.books__box>.book__image {
     width: 80%;
     display: flex;
     margin: auto;
@@ -51,7 +51,8 @@
     justify-content: space-evenly;
 }
 
-.buy,.view{
+.buy,
+.view {
     border: none;
     padding: 7px;
     color: #fff;
@@ -60,7 +61,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    .books__container{
+    .books__container {
         flex-direction: column;
     }
     .books__box {

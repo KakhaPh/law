@@ -45,6 +45,7 @@
 
 .main__body__body {
     width: 100%;
+    background-size: cover;
 }
 
 .fa-graduation-cap,
