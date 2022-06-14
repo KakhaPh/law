@@ -28,7 +28,7 @@
     line-height: 1;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 
 .about_banner_title {
