@@ -26,8 +26,9 @@
     z-index: 89;
     text-align: center;
     line-height: 1;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 }
 
 .about_banner_title {
