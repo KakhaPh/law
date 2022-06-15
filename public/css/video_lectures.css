@@ -15,5 +15,55 @@
 }
 
 .lectures__container {
-    height: 50vh;
+    height: fit-content;
+}
+
+.videos__container {
+    height: fit-content;
+    display: flex;
+    padding: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+.video__box {
+    margin: 10px;
+    width: 25%;
+    height: fit-content;
+
+}
+
+.img__box,.img__box a>img {
+    width: 100%;
+}
+
+.img__box img:hover {
+    opacity: 0.7;
+    transition: .2s;
+}
+
+.header__text>h6{
+    font-weight: bold;
+    padding: 15px;
+}
+
+.inf__box {
+    display: flex;
+}
+
+.inf__box>a, .inf__box a> i {
+    text-decoration: none;
+    color: #7a7a7a;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 7px;
+}
+
+@media screen and (max-width: 750px){
+    .videos__container{
+        flex-direction: column;
+    }
+    .video__box {
+        width: 95%;
+    }
 }

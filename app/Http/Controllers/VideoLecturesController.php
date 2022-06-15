@@ -1,9 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Menus;
 
 use Illuminate\Http\Request;
-use App\Models\Menus;
+use Illuminate\Support\Facades\DB;
+use App\Models\video_lectures;
 
 class VideoLecturesController extends Controller
 {
@@ -17,6 +19,7 @@ class VideoLecturesController extends Controller
     }
     public function index()
     {
-        return view('pages.video_lectures',['menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+        $video_lectures = video_lectures::all();
+        return view('pages.video_lectures', ['video_lectures' => $video_lectures, 'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
     }
 }
