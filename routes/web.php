@@ -27,3 +27,5 @@ Route::get('/video_lectures', [VideoLecturesController::class, 'index'])->name('
 Route::get('/news', [NewsController::class, 'index'])->name('news');
 Route::get('/news/{id}', [NewsController::class, 'show'])->name('news.show');
 Route::get('/tags/{id}', [NewsController::class, 'tag'])->name('news.tag');
+Route::get('/date/{id}', [NewsController::class, 'month'])->name('news.month');
+

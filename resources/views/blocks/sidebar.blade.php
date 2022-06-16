@@ -54,9 +54,12 @@
             <div class="news__sidebar__tags_main">
                 @foreach($tags as $tag)
                 <div class="news__sidebar__tags__item">
-                    <a href="tags/{{ $tag->tags_id }}">{{ $tag->tags_name }}</a>
+                    <a href="{{ route('news.tag', $tag->tags_id )}}">{{ $tag->tags_name }}</a>
                 </div>
                 @endforeach
             </div>
         </div>
 </div>
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/sidebar.css') }}">
+@endpush

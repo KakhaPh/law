@@ -1,3 +1,5 @@
+
+
 body,
 input,
 textarea,
@@ -28,11 +30,10 @@ select {
 .news__container {
     display: flex;
     margin: 2% auto;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .news__sidebar {
-    width: 20%;
     margin: 0.3% 1%;
 }
 
@@ -74,7 +75,21 @@ select {
     font-size: 13px;
     text-decoration: none;
 }
+.news_archives >ul{
+    list-style: none;
+}
 
+.news_archives >ul > li {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.news_archives >ul > li > a{
+    color: #da5643;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+
+}
 .news__sidebar__practiceWidget__item-info>h5 {
     font-weight: bold;
 }
@@ -126,20 +141,20 @@ select {
 }
 
 .news_items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .news_item {
-    height: 550px;
     margin: 16px;
 }
 
 .news_item_img {
-    max-width: 350px;
+    /* max-width: 350px; */
 }
 
-.news_item_img a>img {
+.news_item_img >img {
     object-fit: cover;
     height: auto;
     width: 100%;
@@ -200,13 +215,23 @@ select {
     color: #ec4933;
 }
 
+.news_archives{
+    margin: 15px;
+    width: 33%;
+}
+.news_archives > h3{
+    margin:15px 15px;
 
+}
 /* max widht 750*/
 
 @media screen and (max-width: 750px) {
     .news_items {
         flex-direction: column;
-        grid-template-columns: repeat(1, 1fr);
+    }
+    .news_archives{
+        margin: 15px;
+        width: 100%;
     }
     .news__container {
         flex-direction: column;
@@ -217,8 +242,7 @@ select {
         height: auto;
     }
     .news__sidebar {
-        max-width: 450px;
-        width: 100%;
+        width: 90%;
         margin-top: 20%;
     }
 }

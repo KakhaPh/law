@@ -5,7 +5,10 @@
         <h1 class="news_post_banner_title">{{$menu_info->name}}</h1>
         <h3 class="news_post_banner_title_under">{{$menu_info->body}}</h3>
     </div>
+    @if(!empty($news_info))
     <div class="news_post__container">
+        <div class="news_post__box">
+
         <div class="news_post__image">
             <img  src="{{ asset( $news_info->news_image) }}" alt="">
         </div>
@@ -35,8 +38,19 @@
                
             </div>
         </div>
-         
+        {{-- include blocks sidebar --}}
     </div>
+    
+    @else
+            {{-- Error  --}}
+            <div class="news_post__error">
+                <h1>No News Found</h1>
+            </div>
+
+        </div>
+
+        @endif
+        @include('blocks.sidebar')
 
 
 

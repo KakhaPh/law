@@ -29,25 +29,43 @@ class NewsController extends Controller
     public function show($id)
     {
         $news = News::join('users', 'users.id', '=', 'news.news_author_id')->where('news.news_id', $id)->first();
+        $tags = Tags::all();
+       
         // dd($news);
+    //    check if news_images exist
+        if(!empty($news->news_images)){
         $news_images = json_decode($news->news_images);
         $news_images_array = [];
         foreach ($news_images as $news_image) {
             $news_images_array[] = $news_image;
         }
+    }else{
+        $news_images_array = [];
+        // redirect()->back();
+    }
+   
         // dd($news_images_array);
-        return view('pages.news_post', ['news_images'=>$news_images_array,'news_info'=> $news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+        return view('pages.news_post', ['tags'=>$tags,'news_images'=>$news_images_array,'news_info'=> $news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
     }
     public function tag($id)
     {
-        // SELECT * FROM `tag_to_news` INNER JOIN `news` ON `news`.`news_id` = `tag_to_news`.`tag_id` INNER JOIN `tags` ON `tags`.`tags_id` = `tag_to_news`.`tag_id`;
         $news = News::join('tag_to_news', 'news.news_id', '=', 'tag_to_news.news_id')->join('tags', 'tags.tags_id', '=', 'tag_to_news.tag_id')->where('tags.tags_id', $id)->get();
-        // dd tags name from $news
+        if ($news->count() == 0) {
+            return redirect()->route('news');
+        }
         // dd($news);
-
-
-        // $tags = Tags::all();
-        return view('pages.tags_post', ['news'=>$news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+        $allnews = News::join('users', 'users.id', '=', 'news.news_author_id')->get();
+        
+        return view('pages.tags_post', ['allNews'=>$allnews,'news'=>$news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
+    }
+    public function month($date)
+    {
+        // select news from news inner join user on user.id = news.id and check if date is not the same
+        // $allnews = News::join('users', 'users.id', '=', 'news.news_author_id')->where('news.news_created_at', $date)->get();
+        $allnews = News::join('users', 'users.id', '=', 'news.news_author_id')->get();
+        $news = News::join('users', 'users.id', '=', 'news.news_author_id')->whereBetween('news.news_created_at', [$date.'-00 00:00:00', $date.'-31 23:59:59'])->get();
+        // dd($allnews);
+        return view('pages.month_post', ['allNews'=>$allnews,'news'=>$news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
     }
 }
 
