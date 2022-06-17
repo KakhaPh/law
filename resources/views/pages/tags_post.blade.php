@@ -3,7 +3,7 @@
 @section('content')
     <div style="background-image: url('{{ asset('storage/Images/page-title-background.jpg') }}')" class="news_banner_div">
         <h1 class="news_banner_title">Tag</h1>
-        {{-- <h3 class="news_banner_title_under">{{$news[0]->tags_name}}</h3> --}}
+        <h3 class="news_banner_title_under">{{$news[0]->tags_name}}</h3>
     </div>
 
       <div class="news__container">

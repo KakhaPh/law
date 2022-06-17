@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Menus;
 use App\Models\Tags;
 use App\Models\News;
+use App\Models\tags_to_news;
 
 use Illuminate\Http\Request;
 
@@ -32,24 +33,20 @@ class NewsController extends Controller
         $tags = Tags::all();
        
         // dd($news);
-    //    check if news_images exist
-        if(!empty($news->news_images)){
         $news_images = json_decode($news->news_images);
         $news_images_array = [];
         foreach ($news_images as $news_image) {
             $news_images_array[] = $news_image;
         }
-    }else{
-        $news_images_array = [];
-        // redirect()->back();
-    }
-   
         // dd($news_images_array);
         return view('pages.news_post', ['tags'=>$tags,'news_images'=>$news_images_array,'news_info'=> $news,'menus'=>$this->menu(),'menu_info'=>$this->menu_info()]);
     }
     public function tag($id)
     {
-        $news = News::join('tag_to_news', 'news.news_id', '=', 'tag_to_news.news_id')->join('tags', 'tags.tags_id', '=', 'tag_to_news.tag_id')->where('tags.tags_id', $id)->get();
+        // find tag_to_news by id
+
+        $news = News::join('tag_to_news', 'news.news_id', '=', 'tag_to_news.news_id')->join('tags', 'tags.tags_id', '=', 'tag_to_news.tag_id')->where('tag_to_news.tag_id', $id)->get();
+        // dd($news);
         if ($news->count() == 0) {
             return redirect()->route('news');
         }
